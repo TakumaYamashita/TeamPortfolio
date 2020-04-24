@@ -13,6 +13,7 @@ body {
   color: #4e4e4e;
 }
 
+
 h1,
 h2,
 h3,
@@ -766,6 +767,7 @@ a:hover {
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
+  cursor: pointer;
 }
 
 .service-box:hover .ico-circle {
@@ -791,8 +793,20 @@ a:hover {
   padding: .4rem 0;
 }
 
-.service-box .s-description {
+.service-box .text_box {
   color: #4e4e4e;
+}
+
+.text_box {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	opacity: 0;
+}
+.service-box:hover .text_box{
+  opacity: 1;
 }
 
 /*--------------------------------------------------------------
@@ -844,7 +858,6 @@ a:hover {
 }
 
 .Inquiry h2{
-  color:;
   font-size: 25px;
   font-weight: 200;
   margin: 10px;
